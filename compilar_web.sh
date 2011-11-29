@@ -15,5 +15,8 @@ do
 	fi
 
 	cat "src/header.html" "src/$file" "src/footer.html" > $file
+	echo "Generado exitosamente: $file"; echo
 
 done
+
+echo "Finalizado"
