@@ -4,7 +4,7 @@ echo
 echo "Generando la web del grupo de procesamiento de audio:::"
 echo
 
-FILELIST="index.html historia.html integrantes.html investigacion.html links.html contacto.html blog.html"
+FILELIST="index.html integrantes.html investigacion.html links.html contacto.html blog.html"
 
 for file in $FILELIST
 do
