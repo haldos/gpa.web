@@ -7,7 +7,7 @@ Released for free under a Creative Commons Attribution 2.5 License
 
 * {
 	margin: 0;
-	padding: 0;
+	padding: 0px;
 }
 
 body {
@@ -38,7 +38,8 @@ h1, h1 a, h2, h2 a {
 }
 
 h1 a:hover, h2 a:hover {
-	text-decoration: underline;
+	/*text-decoration: underline;*/
+	text-decoration: none;
 }
 
 h1 {
@@ -70,7 +71,10 @@ blockquote {
 }
 
 a {
-	color: #346086;
+	/*color: #346086;*/
+	color: #6E6E6E;
+	text-decoration: none;
+	font-weight: bold;
 }
 
 a:hover {
@@ -99,8 +103,9 @@ hr {
 
 #logo {
 	width: 870px;
-	height: 135px;
+	height: 90px;
 	margin: 0 auto;
+	padding-top: 10px;
 }
 
 #logo h1, #logo h2 {
@@ -109,13 +114,13 @@ hr {
 
 #logo h1 {
 	float: left;
-	padding-top: 80px;
+	padding-top: 10px;
 	font-size: 30px;
 }
 
 #logo h2 {
 	float: right;
-	padding-top: 95px;
+	padding-top: 15px;
 	font-size: 12px;
 	font-weight: normal;
 }
@@ -200,7 +205,7 @@ hr {
 #page {
 	width: 900px;
 	margin: 0 auto;
-	padding: 45px 35px 45px 25px;
+	padding: 20px 35px 45px 25px;
 	background: url(images/img05.gif) no-repeat;
 }
 
