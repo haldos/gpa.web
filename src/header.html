@@ -12,6 +12,44 @@ Released   : 20071108
 -->
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+
+	<SCRIPT LANGUAGE="JavaScript">	
+		
+	<!-- This script and many more are available free online at -->
+	<!-- The JavaScript Source!! http://javascript.internet.com -->
+	
+	<!-- Begin
+	// Set up the image files to be used.
+	var theImages = new Array() // do not change this
+	// To add more image files, continue with the
+	// pattern below, adding to the array.
+	
+	theImages[0] = 'images/header1.jpg'
+	theImages[1] = 'images/header2.jpg'
+	theImages[2] = 'images/header3.jpg'
+	theImages[3] = 'images/header4.jpg'
+	theImages[4] = 'images/header5.jpg'
+	theImages[5] = 'images/header6.jpg'
+	theImages[6] = 'images/header7.jpg'
+	theImages[7] = 'images/header8.jpg'
+	
+	// do not edit anything below this line
+	
+	var j = 0
+	var p = theImages.length;
+	var preBuffer = new Array()
+	for (i = 0; i < p; i++){
+	   preBuffer[i] = new Image()
+	   preBuffer[i].src = theImages[i]
+	}
+	var whichImage = Math.round(Math.random()*(p-1));
+	function showImage(){
+	document.write('<img src="'+theImages[whichImage]+'" alt="" width="960" height="147" />');
+	}
+	
+	//  End -->
+	</script>
+
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <title>gpa:: grupo de procesamiento de audio</title>
 <meta name="keywords" content="" />
@@ -27,8 +65,8 @@ Released   : 20071108
 </head>
 <body>
 <div id="logo">
-	<h1><a href="#">gpa::</a></h1>
-	<h2>grupo de procesamiento de audio</h2>
+	<h1><a href="#">gpa:: grupo de procesamiento de audio</a></h1>
+	<h2>última actualización: <script type="text/javascript">document.write(new Date(document.lastModified).toLocaleString())</script></h2>
 </div>
 <div id="menu">
 	<ul>
@@ -49,7 +87,7 @@ Released   : 20071108
 	</div>
 </div>
 <hr />
-<div id="banner"><img src="images/img04.jpg" alt="" width="960" height="147" /></div>
+<div id="banner"><script languaje="JavaScript">showImage();</script></div>
 <!-- start page -->
 <div id="page">
 	<!-- start content -->

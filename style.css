@@ -109,13 +109,14 @@ hr {
 
 #logo h1 {
 	float: left;
-	padding-top: 75px;
+	padding-top: 80px;
+	font-size: 30px;
 }
 
 #logo h2 {
 	float: right;
 	padding-top: 95px;
-	font-size: 16px;
+	font-size: 12px;
 	font-weight: normal;
 }
 
