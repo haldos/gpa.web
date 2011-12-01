@@ -104,3 +104,76 @@ Released   : 20071108
 <div id="page">
 	<!-- start content -->
 	<div id="content">
+<h1 class="title">Publicaciones</h1>
+
+<!--
+<iframe src="./publications.php" width="603px" height="1000px" style="border:0;font-size:12px;color:#6E6E6E;"></iframe>
+-->
+
+<?php
+
+// cambiar el apellido del autor a buscar.
+$option["author"]  = "Rocamora";
+
+// No tocar, a menos que sepa lo que hace.
+$option["display"] = "list";
+$option["pg"] = "-1";
+$option["year"] = "-1";
+require( $_SERVER['DOCUMENT_ROOT'] . "/publicaciones/utils.php");
+require( $_SERVER['DOCUMENT_ROOT'] . "/publicaciones/publiUtils.php");
+sqlConnect();
+//unset($title); // interfers with form parameters
+$result = bibQueryResults($option);
+displayResults($result, $option);
+
+?>
+	</div>
+	<!-- end content -->
+	<!-- start sidebar -->
+	<div id="sidebar">
+		<ul>
+			<li>
+				<center>
+				<table cellspacing="0" cellpadding="2" width="200" border="0" align="center"> <tbody> 
+				<tr>
+		<!--
+				<td valign="middle" width="70"> <a href="http://iie.fing.edu.uy" target="blank"><img src="images/iie.png" alt="Instituto de Ingeniería Eléctrica" width="70"/></a></td>
+		-->
+				<td valign="middle" width="80"> <a href="http://www.fing.edu.uy" target="blank"><img src="images/fing.png" alt="Facultad de Ingeniería" width="80"/></a></td>
+				<td valign="middle" width="80"> <a href="http://www.eumus.edu.uy/" target="blank"><img src="images/eum.png" alt="Escuela Universitaria de Música" width="80"/></a></td>
+		<!--
+				<td valign="middle" width="46"> <a href="http://www.universidad.edu.uy/" target="blank"><img src="images/udelar.png" alt="Universidad de la República" width="46"/></a></td>
+		-->
+				</tr>
+				</tbody></table>
+				</center>
+			</li>		
+			<li>
+				<h2>Enlaces</h2>
+				<ul>
+					<li><a href="actividades.html#seminario">Seminario de audio</a></li>
+					<li><a href="http://aeslac2011.fing.edu.uy/" target="blank">Congreso AES LAC 2011</a></li>
+					<!-- <li><a href="http://www.eumus.edu.uy/eme/" target="blank">Estudio de música electroacústica</a></li> -->
+					<li><a href="investigacion.html#software">Software</a></li>
+					<!-- <li><a href="#">Enlace #5</a></li>
+					<li><a href="#">Enlace #6</a></li>
+					<li><a href="#">Enlace #7</a></li>
+					<li><a href="#">Enlace #8</a></li> -->
+				</ul>
+			</li>
+
+			<li>
+				<h2><a href="blog.html">Noticias</a></h2>
+			</li>
+		</ul>
+	</div>
+	<!-- end sidebar -->
+</div>
+<!-- end page -->
+<div id="footer">
+	<p class="legal">Copyright (c) 2011 Audio Processing Group (FING|EUM). All rights reserved.</p>
+	<p class="credit">Designed by <a href="http://www.nodethirtythree.com/">NodeThirtyThree</a> + <a href="http://www.freecsstemplates.org/">Free CSS Templates</a></p><br>
+	<p class="credit">Free JavaScripts provided by <a href="http://javascriptsource.com">The JavaScript Source</a></p>
+</div>
+</body>
+</html>

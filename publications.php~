@@ -1,0 +1,18 @@
+<?php
+
+// Cambiar el apellido del autor a buscar.
+$option["author"]  = "Rocamora";
+
+// No tocar, a menos que sepa lo que hace.
+$option["display"] = "list";
+$option["pg"] = "-1";
+$option["year"] = "-1";
+require( "http://iie.fing.edu.uy/publicaciones/utils.php");
+require( "http://iie.fing.edu.uy/publicaciones/publiUtils.php");
+sqlConnect();
+$result = bibQueryResults($option);
+displayResults($result, $option);
+
+?>
+
+

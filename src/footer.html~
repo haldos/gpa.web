@@ -43,6 +43,9 @@
 <!-- end page -->
 <div id="footer">
 	<p class="legal">Copyright (c) 2011 Audio Processing Group (FING|EUM). All rights reserved.</p>
+	<p class="legal">
+	<a href="#" target="blank"><img alt="Website counter" hspace="0" vspace="0" border="0" src="http://www.rollingcounters.com/5061195-10399B4868E42373EF78F42A27E3005B/counter.imgtheme=7&digits=7&siteId=8"/></a>
+	<p>
 	<p class="credit">Designed by <a href="http://www.nodethirtythree.com/">NodeThirtyThree</a> + <a href="http://www.freecsstemplates.org/">Free CSS Templates</a></p><br>
 	<p class="credit">Free JavaScripts provided by <a href="http://javascriptsource.com">The JavaScript Source</a></p>
 </div>
