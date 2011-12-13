@@ -102,7 +102,9 @@ Released   : 20071108
 			<IMG SRC="images/img10.jpg" border="0" ALT="Google" align="absmiddle"></A>
 			<INPUT TYPE=text name=q size=24 maxlength=255 value="">
 			<INPUT TYPE=hidden name=hl value=es>
+		<!--
 			<INPUT type=submit name=btnG VALUE="">
+		-->
 			</fieldset>
 		</form>
 	</div>
