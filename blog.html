@@ -91,10 +91,19 @@ Released   : 20071108
 	</ul>
 	<div id="search">
 		<form method="get" action="http://www.google.com/search">
+		<!--
 			<fieldset>
 			<input id="s" type="text" name="s" value="" />
 			<input id="x" type="image" name="imageField" src="images/img10.jpg" />
-			</fieldset>
+			</fieldset> 
+		-->
+			<TABLE bgcolor="#FFFFFF"><tr><td>
+			<A HREF="http://www.google.com.uy/">
+			<IMG SRC="http://www.google.com/logos/Logo_40wht.gif" border="0" ALT="Google" align="absmiddle"></A>
+			<INPUT TYPE=text name=q size=31 maxlength=255 value="">
+			<INPUT TYPE=hidden name=hl value=es>
+			<INPUT type=submit name=btnG VALUE="Búsqueda Google">
+			</td></tr></TABLE>
 		</form>
 	</div>
 </div>
