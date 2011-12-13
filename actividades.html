@@ -97,13 +97,147 @@ Released   : 20071108
 			<input id="x" type="image" name="imageField" src="images/img10.jpg" />
 			</fieldset> 
 		-->
-			<fieldset>
-			<A HREF="http://www.google.com.uy/">
-			<IMG SRC="images/img10.jpg" border="0" ALT="Google" align="absmiddle"></A>
-			<INPUT TYPE=text name=q size=24 maxlength=255 value="">
-			<INPUT TYPE=hidden name=hl value=es>
-			<INPUT type=submit name=btnG>
-			</fieldset>
+			<div id="cse" style="width: 100%;">Loading</div>
+			<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+			<script type="text/javascript"> 
+			  google.load('search', '1', {language : 'es', style : google.loader.themes.MINIMALIST});
+			  google.setOnLoadCallback(function() {
+			    var customSearchControl = new google.search.CustomSearchControl(
+			      '004219259474104110725:pdip9-miuoq');
+
+			    customSearchControl.setResultSetSize(google.search.Search.SMALL_RESULTSET);
+			    customSearchControl.draw('cse');
+			  }, true);
+			</script>
+			 <style type="text/css">
+			  .gsc-control-cse {
+			    font-family: Arial, sans-serif;
+			    border-color: #FFFFFF;
+			    background-color: #FFFFFF;
+			  }
+			  input.gsc-input {
+			    border-color: #777777;
+			  }
+			  input.gsc-search-button {
+			    border-color: #333333;
+			    background-color: #333333;
+			  }
+			  .gsc-tabHeader.gsc-tabhInactive {
+			    border-color: #777777;
+			    background-color: #777777;
+			  }
+			  .gsc-tabHeader.gsc-tabhActive {
+			    border-color: #333333;
+			    background-color: #333333;
+			  }
+			  .gsc-tabsArea {
+			    border-color: #333333;
+			  }
+			  .gsc-webResult.gsc-result,
+			  .gsc-results .gsc-imageResult {
+			    border-color: #FFFFFF;
+			    background-color: #FFFFFF;
+			  }
+			  .gsc-webResult.gsc-result:hover,
+			  .gsc-imageResult:hover {
+			    border-color: #000000;
+			    background-color: #FFFFFF;
+			  }
+			  .gs-webResult.gs-result a.gs-title:link,
+			  .gs-webResult.gs-result a.gs-title:link b,
+			  .gs-imageResult a.gs-title:link,
+			  .gs-imageResult a.gs-title:link b {
+			    color: #444444;
+			  }
+			  .gs-webResult.gs-result a.gs-title:visited,
+			  .gs-webResult.gs-result a.gs-title:visited b,
+			  .gs-imageResult a.gs-title:visited,
+			  .gs-imageResult a.gs-title:visited b {
+			    color: #444444;
+			  }
+			  .gs-webResult.gs-result a.gs-title:hover,
+			  .gs-webResult.gs-result a.gs-title:hover b,
+			  .gs-imageResult a.gs-title:hover,
+			  .gs-imageResult a.gs-title:hover b {
+			    color: #444444;
+			  }
+			  .gs-webResult.gs-result a.gs-title:active,
+			  .gs-webResult.gs-result a.gs-title:active b,
+			  .gs-imageResult a.gs-title:active,
+			  .gs-imageResult a.gs-title:active b {
+			    color: #777777;
+			  }
+			  .gsc-cursor-page {
+			    color: #444444;
+			  }
+			  a.gsc-trailing-more-results:link {
+			    color: #444444;
+			  }
+			  .gs-webResult .gs-snippet,
+			  .gs-imageResult .gs-snippet,
+			  .gs-fileFormatType {
+			    color: #333333;
+			  }
+			  .gs-webResult div.gs-visibleUrl,
+			  .gs-imageResult div.gs-visibleUrl {
+			    color: #000000;
+			  }
+			  .gs-webResult div.gs-visibleUrl-short {
+			    color: #000000;
+			  }
+			  .gs-webResult div.gs-visibleUrl-short {
+			    display: none;
+			  }
+			  .gs-webResult div.gs-visibleUrl-long {
+			    display: block;
+			  }
+			  .gsc-cursor-box {
+			    border-color: #FFFFFF;
+			  }
+			  .gsc-results .gsc-cursor-box .gsc-cursor-page {
+			    border-color: #777777;
+			    background-color: #FFFFFF;
+			    color: #444444;
+			  }
+			  .gsc-results .gsc-cursor-box .gsc-cursor-current-page {
+			    border-color: #333333;
+			    background-color: #333333;
+			    color: #444444;
+			  }
+			  .gs-promotion {
+			    border-color: #CCCCCC;
+			    background-color: #E6E6E6;
+			  }
+			  .gs-promotion a.gs-title:link,
+			  .gs-promotion a.gs-title:link *,
+			  .gs-promotion .gs-snippet a:link {
+			    color: #000044;
+			  }
+			  .gs-promotion a.gs-title:visited,
+			  .gs-promotion a.gs-title:visited *,
+			  .gs-promotion .gs-snippet a:visited {
+			    color: #000044;
+			  }
+			  .gs-promotion a.gs-title:hover,
+			  .gs-promotion a.gs-title:hover *,
+			  .gs-promotion .gs-snippet a:hover {
+			    color: #444444;
+			  }
+			  .gs-promotion a.gs-title:active,
+			  .gs-promotion a.gs-title:active *,
+			  .gs-promotion .gs-snippet a:active {
+			    color: #004400;
+			  }
+			  .gs-promotion .gs-snippet,
+			  .gs-promotion .gs-title .gs-promotion-title-right,
+			  .gs-promotion .gs-title .gs-promotion-title-right *  {
+			    color: #333333;
+			  }
+			  .gs-promotion .gs-visibleUrl,
+			  .gs-promotion .gs-visibleUrl-short {
+			    color: #004400;
+			  }
+			</style>
 		</form>
 	</div>
 </div>
