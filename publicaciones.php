@@ -119,10 +119,9 @@ $option["author"]  = "Rocamora";
 $option["display"] = "list";
 $option["pg"] = "-1";
 $option["year"] = "-1";
-$option["lg"] = "fr";
 require( $_SERVER['DOCUMENT_ROOT'] . "/publicaciones/utils.php");
 // require( $_SERVER['DOCUMENT_ROOT'] . "/publicaciones/publiUtils.php");
-require("publiUtils.php");
+require("publiUtils_es.php");
 sqlConnect();
 //unset($title); // interfers with form parameters
 $result = bibQueryResults($option);
