@@ -100,7 +100,7 @@ Released   : 20071108
 		</form> 
 	-->
 
-		<div id="cse-search-form" style="width: 270px; height: 62px;">Loading</div>
+		<div id="cse-search-form" style="width: 250px; height: 62px; text-align: center;">Loading</div>
 		<script src="http://www.google.com/jsapi" type="text/javascript"></script>
 		<script type="text/javascript"> 
 		  google.load('search', '1', {language : 'es', style : google.loader.themes.MINIMALIST});
