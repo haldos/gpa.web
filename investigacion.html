@@ -100,7 +100,7 @@ Released   : 20071108
 		</form> 
 	-->
 
-		<div id="cse-search-form" style="width: 250px; height: 62px; text-align: center; vertical-align: top;">Loading</div>
+		<div id="cse-search-form" style="width: 100%;">Loading</div>
 		<script src="http://www.google.com/jsapi" type="text/javascript"></script>
 		<script type="text/javascript"> 
 		  google.load('search', '1', {language : 'es', style : google.loader.themes.MINIMALIST});
@@ -110,11 +110,10 @@ Released   : 20071108
 		
 		    customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
 		    var options = new google.search.DrawOptions();
-		    options.setSearchFormRoot('cse-search-form');
-		    customSearchControl.draw('cse', options);
+		    options.enableSearchboxOnly("resultados.html");
+		    customSearchControl.draw('cse-search-form', options);
 		  }, true);
 		</script>
-
 
 	</div>
 </div>
