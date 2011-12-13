@@ -523,7 +523,7 @@ function displayResults($result, $option)
 
   if ($option["display"]=="xml")
     {
-      echo "<pre>\n &lt;?xml version=\"1.0\" encoding='ISO-8859-1'?&gt;\n";
+      echo "<pre>\n &lt;?xml version=\"1.0\" encoding='ISO-8859-15'?&gt;\n";
       echo " &lt;PUBCNRS&gt;\n</pre>\n";
     }
 
