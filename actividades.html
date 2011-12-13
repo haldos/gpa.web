@@ -98,7 +98,7 @@ Released   : 20071108
 			<input id="x" type="image" name="imageField" src="images/img10.jpg" />
 			</fieldset> 
 		-->
-			<div id="cse" style="width: 100%;">Loading</div>
+			<div id="cse" style="width: 280px; height: 62px;">Loading</div>
 			<script src="http://www.google.com/jsapi" type="text/javascript"></script>
 			<script type="text/javascript"> 
 			  google.load('search', '1', {language : 'es', style : google.loader.themes.MINIMALIST});
@@ -114,7 +114,7 @@ Released   : 20071108
 			  .gsc-control-cse {
 			    font-family: Arial, sans-serif;
 			    border-color: #FFFFFF;
-			    background-color: #FFFFFF;
+			    
 			  }
 			  input.gsc-input {
 			    border-color: #777777;
