@@ -68,14 +68,14 @@ Released   : 20071108
 <!--
 	<h1><a href="index.html">gpa:: grupo de procesamiento de audio</a></h1>
 -->
-	<!-- <h2>Ãºltima actualizaciÃ³n: <script type="text/javascript">document.write(new Date(document.lastModified).toLocaleString())</script></h2> -->
+	<!-- <h2>última actualización: <script type="text/javascript">document.write(new Date(document.lastModified).toLocaleString())</script></h2> -->
 <!--	
 	<h2> (logo udelar) </h2>
 -->
 	<table cellspacing="0" cellpadding="2" width="870" border="0" align="center"> <tbody> 
 		<tr>
 		<td align="left" valign="middle" width="354"> <a href="index.html" target="blank"><img src="images/gpa.png" alt="Grupo de Procesamiento de Audio" width="354"/></a></td>
-		<td align="right" valign="right" width="226"> <a href="http://www.universidad.edu.uy" target="blank"><img src="images/udelar_gray.png" alt="Universidad de la RepÃºblica" width="226"/></a></td>
+		<td align="right" valign="right" width="226"> <a href="http://www.universidad.edu.uy" target="blank"><img src="images/udelar_gray.png" alt="Universidad de la República" width="226"/></a></td>
 		</tr>
 	</tbody></table>
 
@@ -84,7 +84,7 @@ Released   : 20071108
 	<ul>
 		<li class="first"><a href="index.html" accesskey="1" title="">Inicio</a></li>
 		<li><a href="integrantes.html" accesskey="2" title="">Integrantes</a></li>
-		<li><a href="investigacion.html" accesskey="3" title="">InvestigaciÃ³n</a></li>
+		<li><a href="investigacion.html" accesskey="3" title="">Investigación</a></li>
 		<li><a href="publicaciones.php" accesskey="3" title="">Publicaciones</a></li>
 		<li><a href="actividades.html" accesskey="6" title="">Actividades</a></li>
 		<li><a href="blog.html" accesskey="4" title="">Blog</a></li>
@@ -138,12 +138,12 @@ displayResults($result, $option);
 				<table cellspacing="0" cellpadding="2" width="200" border="0" align="center"> <tbody> 
 				<tr>
 		<!--
-				<td valign="middle" width="70"> <a href="http://iie.fing.edu.uy" target="blank"><img src="images/iie.png" alt="Instituto de IngenierÃ­a ElÃ©ctrica" width="70"/></a></td>
+				<td valign="middle" width="70"> <a href="http://iie.fing.edu.uy" target="blank"><img src="images/iie.png" alt="Instituto de Ingeniería Eléctrica" width="70"/></a></td>
 		-->
-				<td valign="middle" width="80"> <a href="http://www.fing.edu.uy" target="blank"><img src="images/fing.png" alt="Facultad de IngenierÃ­a" width="80"/></a></td>
-				<td valign="middle" width="80"> <a href="http://www.eumus.edu.uy/" target="blank"><img src="images/eum.png" alt="Escuela Universitaria de MÃºsica" width="80"/></a></td>
+				<td valign="middle" width="80"> <a href="http://www.fing.edu.uy" target="blank"><img src="images/fing.png" alt="Facultad de Ingeniería" width="80"/></a></td>
+				<td valign="middle" width="80"> <a href="http://www.eumus.edu.uy/" target="blank"><img src="images/eum.png" alt="Escuela Universitaria de Música" width="80"/></a></td>
 		<!--
-				<td valign="middle" width="46"> <a href="http://www.universidad.edu.uy/" target="blank"><img src="images/udelar.png" alt="Universidad de la RepÃºblica" width="46"/></a></td>
+				<td valign="middle" width="46"> <a href="http://www.universidad.edu.uy/" target="blank"><img src="images/udelar.png" alt="Universidad de la República" width="46"/></a></td>
 		-->
 				</tr>
 				</tbody></table>
@@ -154,7 +154,7 @@ displayResults($result, $option);
 				<ul>
 					<li><a href="actividades.html#seminario">Seminario de audio</a></li>
 					<li><a href="http://aeslac2011.fing.edu.uy/" target="blank">Congreso AES LAC 2011</a></li>
-					<!-- <li><a href="http://www.eumus.edu.uy/eme/" target="blank">Estudio de mÃºsica electroacÃºstica</a></li> -->
+					<!-- <li><a href="http://www.eumus.edu.uy/eme/" target="blank">Estudio de música electroacústica</a></li> -->
 					<li><a href="investigacion.html#software">Software</a></li>
 					<li><a href="http://iie.fing.edu.uy/twiki/bin/viewauth.cgi/Audio/WebHome" target="blank">Wiki</a></li>
 					<!-- <li><a href="#">Enlace #5</a></li>
