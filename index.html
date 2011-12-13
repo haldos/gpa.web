@@ -103,7 +103,7 @@ Released   : 20071108
 		<div id="cse-search-form" style="width: 100%;">Loading</div>
 		<script src="http://www.google.com/jsapi" type="text/javascript"></script>
 		<script type="text/javascript"> 
-		  google.load('search', '1', {language : 'es', style : google.loader.themes.MINIMALIST});
+		  google.load('search', '1', {language : 'es'});
 		  google.setOnLoadCallback(function() {
 		    var customSearchControl = new google.search.CustomSearchControl(
 		      '004219259474104110725:pdip9-miuoq');
