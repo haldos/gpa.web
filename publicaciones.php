@@ -50,7 +50,7 @@ Released   : 20071108
 	//  End -->
 	</script>
 
-<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
 <title>gpa:: grupo de procesamiento de audio</title>
 <meta name="keywords" content="" />
 <meta name="description" content="" />
@@ -119,9 +119,8 @@ $option["author"]  = "Rocamora";
 $option["display"] = "list";
 $option["pg"] = "-1";
 $option["year"] = "-1";
-// require( $_SERVER['DOCUMENT_ROOT'] . "/publicaciones/utils.php");
+require( $_SERVER['DOCUMENT_ROOT'] . "/publicaciones/utils.php");
 // require( $_SERVER['DOCUMENT_ROOT'] . "/publicaciones/publiUtils.php");
-require("utils.php");
 require("publiUtils.php");
 sqlConnect();
 //unset($title); // interfers with form parameters

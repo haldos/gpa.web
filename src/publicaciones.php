@@ -13,9 +13,8 @@ $option["author"]  = "Rocamora";
 $option["display"] = "list";
 $option["pg"] = "-1";
 $option["year"] = "-1";
-// require( $_SERVER['DOCUMENT_ROOT'] . "/publicaciones/utils.php");
+require( $_SERVER['DOCUMENT_ROOT'] . "/publicaciones/utils.php");
 // require( $_SERVER['DOCUMENT_ROOT'] . "/publicaciones/publiUtils.php");
-require("utils.php");
 require("publiUtils.php");
 sqlConnect();
 //unset($title); // interfers with form parameters
