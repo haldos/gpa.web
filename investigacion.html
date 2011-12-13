@@ -97,13 +97,13 @@ Released   : 20071108
 			<input id="x" type="image" name="imageField" src="images/img10.jpg" />
 			</fieldset> 
 		-->
-			<TABLE bgcolor="#FFFFFF"><tr><td>
+			<fieldset>
 			<A HREF="http://www.google.com.uy/">
-			<IMG SRC="http://www.google.com/logos/Logo_40wht.gif" border="0" ALT="Google" align="absmiddle"></A>
+			<IMG SRC="images/img10.jpg" border="0" ALT="Google" align="absmiddle"></A>
 			<INPUT TYPE=text name=q size=31 maxlength=255 value="">
 			<INPUT TYPE=hidden name=hl value=es>
 			<INPUT type=submit name=btnG VALUE="Búsqueda Google">
-			</td></tr></TABLE>
+			</fieldset>
 		</form>
 	</div>
 </div>
