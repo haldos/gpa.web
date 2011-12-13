@@ -90,7 +90,7 @@ Released   : 20071108
 		<li><a href="blog.html" accesskey="4" title="">Blog</a></li>
 	</ul>
 	<div id="search">
-		<form method="get" action="">
+		<form method="get" action="http://www.google.com/search">
 			<fieldset>
 			<input id="s" type="text" name="s" value="" />
 			<input id="x" type="image" name="imageField" src="images/img10.jpg" />
