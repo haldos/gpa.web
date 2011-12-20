@@ -19,7 +19,7 @@ do
 
 done
 
-FILELIST2="seminario/2005.html seminario/2006.html seminario/2007.html seminario/2008.html seminario/2009.html seminario/2010.html"
+FILELIST2="seminario/2003.html seminario/2005.html seminario/2006.html seminario/2007.html seminario/2008.html seminario/2009.html seminario/2010.html"
 
 for file in $FILELIST2
 do
