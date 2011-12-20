@@ -55,7 +55,6 @@ Released   : 20071108
 <meta name="keywords" content="" />
 <meta name="description" content="" />
 <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
-<link href="../style.css" rel="stylesheet" type="text/css" media="screen" />
 <!--[if IE]>
 <style type="text/css">
 #sidebar #calendar {
