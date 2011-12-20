@@ -19,9 +19,24 @@ do
 
 done
 
-rm *~
-rm src/*~
-rm seminario/*~
-rm src/seminario/*~
+if [ -f "*~" ];
+then 
+	rm *~ 
+fi
+
+if [ -f "src/*~" ];
+then 
+	rm src/*~ 
+fi
+
+if [ -f "seminario/*~" ];
+then 
+	rm seminario/*~ 
+fi
+
+if [ -f "src/seminario/*~" ];
+then
+	rm src/seminario/*~ 
+fi
 
 echo "Finalizado"

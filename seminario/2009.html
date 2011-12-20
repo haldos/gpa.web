@@ -54,7 +54,8 @@ Released   : 20071108
 <title>gpa:: grupo de procesamiento de audio</title>
 <meta name="keywords" content="" />
 <meta name="description" content="" />
-<link href="/iie/ext7/grupos/apache/htdocs/investigacion/grupos/gpa/style.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="../style.css" rel="stylesheet" type="text/css" media="screen" />
 <!--[if IE]>
 <style type="text/css">
 #sidebar #calendar {
