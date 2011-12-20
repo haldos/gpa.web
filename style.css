@@ -227,6 +227,10 @@ ul {
 	padding-bottom: 10px;
 }
 
+li {
+	margin: 5px 0;
+}
+
 h2 {
 	padding-top: 10px;
 }
