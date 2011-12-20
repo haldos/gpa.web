@@ -19,4 +19,9 @@ do
 
 done
 
+rm *~
+rm src/*~
+rm seminario/*~
+rm src/seminario/*~
+
 echo "Finalizado"
