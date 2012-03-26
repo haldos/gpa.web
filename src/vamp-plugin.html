@@ -1,8 +1,8 @@
-<h1 class="title">FChT Vamp Plugin para Sonic Visualiser</h1>
+<h1 class="title">FChT Vamp Plugin</h1>
 
 <h2 class="title">Descripción</h2>
 <p>
-Hemos implementado un plugin para el software de edición de audio llamado
+Hemos implementado un plugin que puede utilizarse con el software de análisis de audio llamado
 <a href="http://www.sonicvisualiser.org/" target="blank">Sonic Visualiser</a>.
 Este plugin implementa el cálculo de la <a href="fcht">Transformada Fan Chirp</a>.
 </p>
@@ -24,34 +24,58 @@ También pueden descargarse versiones compiladas del plugin:
 </p>
 
 <p>
-<table cellspacing="0" cellpadding="2" border="0" align="center">
-<tr>
-<td><strong>Plataforma</strong></td>
-<td><strong>Binario 32 bits</strong></td>
-<td><strong>Binario 64 bits</strong></td>
+<center>
+<table cellspacing="0" cellpadding="20" border="0" align="center"><tbody> 
+<tr height="30">
+<td valign="middle" width="150"><strong><center>Plataforma</center></strong></td>
+<td valign="middle" width="100"><strong><center>Binario 32 bits</center></strong></td>
+<td valign="middle" width="100"><strong><center>Binario 64 bits</center></strong></td>
 </tr>
-<tr>
+<tr height="60">
 <!-- LINUX -->
-<td valign="middle" width="72"><img src="images/linux_logo.png" alt="Linux" width="72"/></td>
-<td><a href="">Descargar</a></td>
-<td><a href="">Descargar</a></td>
+<td valign="middle" width="150"><center><img src="images/linux_logo.png" alt="Linux" width="48" align="absmiddle"/> Linux</center></td>
+<td valign="middle" width="100"><a href="./src/vamp/FChT_f0gram.so"><center>Descargar<br>(.so)</center></a></td>
+<td valign="middle" width="100"><a href="./src/vamp/FChT_f0gram.64.so"><center>Descargar<br>(.so)</center></a></td>
 </tr>
-<tr>
+<tr height="60">
 <!-- WINDOWS -->
-<td valign="middle" width="72"><img src="images/win_logo.png" alt="Windows" width="72"/></td>
-<td><a href="">Descargar</a></td>
-<td><a href="">Descargar</a></td>
+<td valign="middle" width="150"><center><img src="images/win_logo.png" alt="Windows" width="48" align="absmiddle"/> Windows</center></td>
+<td valign="middle" width="100"><a href=#><center>Próximamnte<br>(.dll)</center></a></td>
+<td valign="middle" width="100"><a href=#><center>Próximamnte<br>(.dll)</center></a></td>
 </tr>
-<tr>
+<tr height="60">
 <!-- MAC OS -->
-<td valign="middle" width="72"><img src="images/mac_logo.png" alt="MacOS" width="72"/></td>
-<td><a href="">Descargar</a></td>
-<td><a href="">Descargar</a></td>
+<td valign="middle" width="150"><center><img src="images/mac_logo.png" alt="MacOS" width="48" align="absmiddle"/> Mac OS</center></td>
+<td valign="middle" width="100"><a href=#><center>Próximamnte<br>(.dylib)</center></a></td>
+<td valign="middle" width="100"><a href=#><center>Próximamnte<br>(.dylib)</center></a></td>
 </tr>
-</table>
+</tbody></table>
+</center>
 </p>
 
 <h3 class="title">Instrucciones de instalación</h3>
-
+<ul>
+	<li><strong>Linux</strong><br>
+	Utilizar los makefiles incluidos, tanto para 32 como para 64 bits. Por ejemplo, para 32 bits, ejecutar en una terminal:<br>
+	<code>makefile -f Makefile.linux</code><br>
+	Luego copiar el archivo compilado al directorio donde se instalan los plugins vamp (en general <code>~/vamp</code>):<br>
+	<code>cp FChT_f0gram.so ~/vamp</code>
+	</li>
+	<li><strong>Windows</strong><br>
+	(próximamente)
+	</li>
+	<li><strong>MacOS</strong><br> 
+	(próximamente)
+	</li>
+</ul>
 
 <h2 class="title">Ejemplos</h2>
+<p>
+Incluimos aquí una captura de pantalla del Sonic Visualiser, utilizando nuestro plugin. El archivo de audio utilizado puede descargarse <a href="./audio/example-vamp.wav">aquí</a>.
+</p>
+<p>
+<center>
+<a href="./images/plugin_example.png"><img alt="vamp_plugin_example" src="./images/plugin_example_preview.png" border=0></a><br>
+(clic para agrandar)
+</center>
+</p>
