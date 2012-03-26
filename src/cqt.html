@@ -1,0 +1,40 @@
+<h1 class="title">IIR Constant-Q Transform</h1>
+
+<h2 class="title">Description</h2>
+<p> Here you can find some information and the Matlab/Octave source code of 
+the IIR Constant-Q Transform (IIR-CQT) proposed in the article
+<a href="http://iie.fing.edu.uy/publicaciones/2009/CRL09/">"AN EFFICIENT MULTI-RESOLUTION SPECTRAL TRANSFORM FOR MUSIC ANALYSIS"</a>, P. Cancela, M. Rocamora, E. Lopez,  
+ISMIR 2009. </p>
+<br>
+<p>It shows to be a good compromise between the flexibility of the <a href="http://www.wellesley.edu/Physics/brown/pubs/effalgV92P2698-P2701.pdf">efficient CQT</a> and the low computational cost of the <a href="http://www.dafx.ca/proceedings/papers/p_247.pdf">MR-FFT</a>.</p>
+<br>
+
+<h2 class="title">Implementation</h2>
+
+<p> The spectrum of the signal frame x is filtered using an IIR filter of one
+zero and one pole. This corresponds to a multiplication in the time domain
+between the signal frame and a window being the frequency response of
+the IIR filter. The zero is located at -1 in the Z-plane to force a time
+window that is zero in its extremes. The location of the pole varies
+for each frequency bin along the real axis in order to obtain different
+time window widths (typically wider for lower frequencies and narrower
+for higher ones), giving the multi-resolution behavior of the transform.
+Thus the filter is an IIR Linear Time Variant. <br>The recursive equation of
+the filter is: y[n]=x[n]+x[n+1]+poles[n]*y[n-1]<br>
+The filter is applied in forward direction followed by reverse filtering
+to obtain zero-phase distortion (and magnitude modified by the square of
+the filter's magnitude response). A detailed explanation can be found in the <a href="http://iie.fing.edu.uy/publicaciones/2009/CRL09/">article</a>.</p>
+<br>
+<p>The source code is available <a href="./src/iir_cqt_spectrogram.zip">here</a></p>
+
+<h2 class="title">Examples</h2>
+
+<p>The following examples show the difference between IIR-CQT and traditional STFT spectrograms.
+ <UL>
+  <LI><A href="./audio/example1.wav">Example 1 (audio)</A> - singing voice plus accompaniment (The Beatles - Michelle)
+  <LI><A href="./audio/example2.wav">Example 2 (audio)</A> - instrumental music excerpt (The Beatles - For no one)
+ </UL>
+<center>
+<A href="./img/spectrogram.png"><img alt="spectrogram" src="./img/spectrogram-preview.png" border=0></A>
+<center>(click to enlarge)
+</p>
