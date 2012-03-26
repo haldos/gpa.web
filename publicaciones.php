@@ -167,7 +167,16 @@ displayResults($result, $option);
 				</tr>
 				</tbody></table>
 				</center>
-			</li>		
+			</li>
+
+			<li>
+				<h2>Idioma</h2>
+				<ul>
+					<li><a href="index.html"> Español </a></li>
+					<li><a href="index_en.html"> English </a></li>
+				</ul>
+			</li>
+		
 			<li>
 				<h2>Enlaces</h2>
 				<ul>
