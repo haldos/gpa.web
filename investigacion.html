@@ -10,7 +10,7 @@ Version    : 1.0
 Released   : 20071108
 
 -->
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
 <head>
 
 	<SCRIPT LANGUAGE="JavaScript">	
@@ -48,6 +48,18 @@ Released   : 20071108
 	}
 	
 	//  End -->
+	</script>
+
+	<script language="javascript">
+	function getCurrentFile() {
+		var filename = document.location.href;
+		var tail = (filename.indexOf(".", (filename.indexOf(".org")+1)) == -1) ? filename.length : filename.lastIndexOf(".");
+		return (filename.lastIndexOf("/") >= (filename.length - 1)) ? (filename.substring( filename.substring(0, filename.length - 2).lastIndexOf("/")+1, filename.lastIndexOf("/"))).toLowerCase() : (filename.substring(filename.lastIndexOf("/")+1, tail)).toLowerCase();
+	}
+	function showFlags(){
+	document.write('<td><a href="'+getCurrentFile()+'.html"><img src="./images/es_flag.png" alt="Español" width="24"/></a></td>');
+	document.write('<td><a href="'+getCurrentFile()+'_en.html"><img src="./images/en_flag.png" alt="English" width="24"/></a></td>');
+	}
 	</script>
 
 <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
@@ -192,14 +204,15 @@ Released   : 20071108
 				</center>
 			</li>
 
-			<li>
-				<h2>Idioma</h2>
-				<ul>
-					<li><a href="index.html"> Español </a></li>
-					<li><a href="index_en.html"> English </a></li>
-				</ul>
-			</li>
-		
+			<center>
+				Idioma / Language:<br>
+				<table cellspacing="0" cellpadding="2" width="60" height="32" border="0" align="center"> <tbody> 
+				<tr>
+				<script languaje="javascript">showFlags();</script>
+				</tr>
+				</tbody></table>
+			</center>
+
 			<li>
 				<h2>Enlaces</h2>
 				<ul>
