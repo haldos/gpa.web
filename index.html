@@ -85,9 +85,9 @@ Released   : 20071108
 		<li class="first"><a href="index.html" accesskey="1" title="">Inicio</a></li>
 		<li><a href="integrantes.html" accesskey="2" title="">Integrantes</a></li>
 		<li><a href="investigacion.html" accesskey="3" title="">Investigación</a></li>
-		<li><a href="publicaciones.php" accesskey="3" title="">Publicaciones</a></li>
-		<li><a href="actividades.html" accesskey="6" title="">Actividades</a></li>
-		<li><a href="blog.html" accesskey="4" title="">Blog</a></li>
+		<li><a href="publicaciones.php" accesskey="4" title="">Publicaciones</a></li>
+		<li><a href="actividades.html" accesskey="5" title="">Actividades</a></li>
+		<li><a href="blog.html" accesskey="6" title="">Blog</a></li>
 	</ul>
 	<div id="search">
 
