@@ -144,8 +144,8 @@ Released   : 20071108
 <?php
 
 // cambiar el apellido del autor a buscar.
-$option["author"]  = "Rocamora";
-// $option["groups"]  = "gpa";
+//$option["author"]  = "Rocamora";
+$option["groups"]  = "gpa";
 
 // No tocar, a menos que sepa lo que hace.
 $option["display"] = "list";
