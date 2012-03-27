@@ -251,7 +251,7 @@ h2 {
 }
 
 .post .entry {
-	padding: 0 20px;
+	padding: 0 10px;
 }
 
 .post .meta {
@@ -311,6 +311,21 @@ h2 {
 #sidebar li h2 {
 	margin-bottom: 15px;
 	font-size: 18px;
+}
+
+#sidebar li h3 {
+	margin-bottom: 5px;
+	font-size: 14px;
+}
+
+#sidebar li h4 { /* usado para la fecha de las noticias */
+	float: right;
+	color: #B4B4B4;
+}
+
+#sidebar p {
+	text-align: justify;
+	line-height: 120%;
 }
 
 /* Calendar */

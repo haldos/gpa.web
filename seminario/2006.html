@@ -50,6 +50,18 @@ Released   : 20071108
 	//  End -->
 	</script>
 
+	<script language="javascript">
+	function getCurrentFile() {
+		var filename = document.location.href;
+		var tail = (filename.indexOf(".", (filename.indexOf(".org")+1)) == -1) ? filename.length : filename.lastIndexOf(".");
+		return (filename.lastIndexOf("/") >= (filename.length - 1)) ? (filename.substring( filename.substring(0, filename.length - 2).lastIndexOf("/")+1, filename.lastIndexOf("/"))).toLowerCase() : (filename.substring(filename.lastIndexOf("/")+1, tail)).toLowerCase();
+	}
+	function showFlags(){
+	document.write('<td><a href="'+getCurrentFile()+'.html"><img src="../images/es_flag.png" alt="Español" width="24"/></a></td>');
+	document.write('<td><a href="'+getCurrentFile()+'_en.html"><img src="../images/en_flag.png" alt="English" width="24"/></a></td>');
+	}
+	</script>
+
 <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
 <title>gpa:: grupo de procesamiento de audio</title>
 <meta name="keywords" content="" />
@@ -263,6 +275,16 @@ El seminario comienza el Miércoles 25 de Octubre, a las 19:00 hrs, en el ITS de 
 				</tbody></table>
 				</center>
 			</li>		
+
+			<center>
+				Idioma / Language:<br>
+				<table cellspacing="0" cellpadding="2" width="60" height="32" border="0" align="center"> <tbody> 
+				<tr>
+				<script languaje="javascript">showFlags();</script>
+				</tr>
+				</tbody></table>
+			</center>
+
 			<li>
 				<h2>Enlaces</h2>
 				<ul>
@@ -280,6 +302,15 @@ El seminario comienza el Miércoles 25 de Octubre, a las 19:00 hrs, en el ITS de 
 
 			<li>
 				<h2><a href="../blog.html">Noticias</a></h2>
+		
+				<h3><a href="blog.html#vamp_fcht">Vamp FChT Plugin</a></h3>
+				<h4>27 de marzo de 2012</h4><br>
+				<p>
+				Hemos implementado un plugin que puede utilizarse con el software 
+				de análisis de audio llamado Sonic Visualiser. Este plugin 
+				implementa el cálculo de la Transformada Fan Chirp... <a href="blog.html#vamp_fcht">(leer más)</a>
+				</p>
+
 			</li>
 		</ul>
 	</div>

@@ -208,6 +208,15 @@ displayResults($result, $option);
 
 			<li>
 				<h2><a href="blog.html">Noticias</a></h2>
+
+				<h3><a href="blog.html#vamp_fcht">Vamp FChT Plugin</a></h3>
+				<h4>27 de marzo de 2012</h4><br>
+				<p>
+				Hemos implementado un plugin que puede utilizarse con el software 
+				de análisis de audio llamado Sonic Visualiser. Este plugin 
+				implementa el cálculo de la Transformada Fan Chirp... <a href="blog.html#vamp_fcht">(leer más)</a>
+				</p>
+
 			</li>
 		</ul>
 	</div>
