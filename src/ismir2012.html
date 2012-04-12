@@ -1,73 +1,45 @@
-<h1 class="title">Fan Chirp Transform for Music Representation</h1>
+<h1 class="title">Computer aided music performance analysis by means of pitch contours representation</h1>
 
 
 <h2 class="title">Description</h2>
-<p> Here you can find some information and the Matlab/Octave source code for the computation of the Fan Chirp Transform and a F0gram based on it,  
- proposed in the article
-<a href="http://iie.fing.edu.uy/publicaciones/2010/CLR10/">"FAN CHIRP TRANSFORM FOR MUSIC REPRESENTATION"</a>, P. Cancela, E. Lopez, M. Rocamora, 
-DAFx 2010. </p>
+<p>
+This work deals with computer aided analysis of music
+performance from audio recordings. An existing compu-
+tational method for the representation of pitch contours is
+briefly reviewed. Its application to music analysis is ex-
+emplified with two pieces of non-notated music: a field
+recording of a folkloric form of polyphonic singing and
+a commercial recording by a noted blues musician. Both
+examples have vocal parts exhibiting complex pitch evo-
+lution, difficult to analyse and notate with precision using
+Western common music notation. By using non-traditional
+time-frequency analysis techniques that improve the loca-
+tion of the components of a complex sound, the melodic
+content representation implemented here allows a detailed
+study of aspects related to pitch intonation and tuning. This
+in turn permits an objective measurement of essential mu-
+sical characteristics that are difficult or impossible to prop-
+erly evaluate by subjective perception alone, and which are
+often not accounted for in traditional musicological analy-
+sis. Two software tools are released that allow the practical
+use of the described methods.
+<p>
 <br>
 
-<p>The Fan Chirp Transform (FChT) provides an acute representation of harmonically related linear chirp signals. The FChT can be considered as a time warping followed by a Fourier Transform, which enables an efficient implementation based on the FFT.</p> 
-<br>
-<p>The FChT was introduced in the work by L. Weruaga and M. Kepesi (e.g. <a href="http://dx.doi.org/10.1016/j.sigpro.2007.01.006">reference</a>). Our formulation and implementation of the FChT was devised independently from the original work so its properties are slightly different.  The goal of the formulation is to obtain a more acute representation of linear chirps. A positive byproduct is that it also enables the application of arbitrary warpings in order to analyze non-linear chirps straightforwardly. In addition, the implementation is designed with an emphasis on computational cost.</p> 
-<br>
-
-<p>In this work the FChT is applied to the analysis of pitch content in polyphonic music. A F0gram is computed based on gathering harmonically related peaks of the FChT. Besides, it is combined with the CQT to provide time-frequency multi-resolution in the fan geometry.</p> 
-<br>
-
-<h2 class="title">Implementation</h2>
-<p>The source code is available <a href="./src/fcht/FanChirpF0gram_v1.zip">here</a> (Matlab/Octave and some C code functions).</p>
-<br>
+<h2 class="title">Vamp Plugin</h2>
+<p>
+We have implemented a plugin that can be used with the audio analysis software called <a href="http://www.sonicvisualiser.org/" target="blank">Sonic Visualiser<a>. This plugin implements the calculation of the Fan Chirp transform applied to the analysis of polyphonic music. This technique, based on the decomposition of the audio signal in harmonics "chirps", results in a representation of the pitch prominence, called F0gram.
+</p>
 
 <p>
-This code computes a Short Time FChT. 
-A F0gram is also computed based on the FChT and a set of f0  
-candidates is returned for each audio frame.
-
-The F0gram code, as provided, is intended for main melody extraction.
-For this reason a f0 preference function is applied (but can be disabled).
-
-The code also enables the usage of a combination of the FChT and the  
-Constant Q-Transform.</p>
-<p> For a detailed description of the implementation please refer to the article.</p>
+More information and download links can be found <a href="vamp-plugin">here</a>.
+</p>
 <br>
+
+<h2 class="title">Matlab GUI Tool</h2>
+
+
 
 <h2 class="title">Examples</h2>
 
-<p>The following examples show the time-frequency representation obtained with the FChT as well as the pitch content visualization provided by the F0gram. 
- <UL>
-  <LI><A href="./audio/example1-fcht.wav">Example 1 (audio)</A> <br> 
-This is an audio excerpt (which is used throughout the article) of the music file "pop1.wav" from the MIREX melody extraction test set. It consist of three simultaneous prominent singing voices in the first part followed by a single voice in the second part, and a rather soft accompaniment whithout percussion.<br><br>
-  <LI><A href="./audio/example2-fcht.wav">Example 2 (audio)</A> <br> 
-This is an audio excerpt of the music file "opera_fem4.wav" from the MIREX melody extraction test set. It is a short fragment of an opera passage performed by a female voice and orchestra. The singing voice exhibits rapid pitch fluctuations.  
- </UL>
-<center>
-<A href="./images/t-f_representations.png"><img alt="t-f_representations" src="./images/t-f_representations_preview.png" border=0></A>
-<center>
-<small>
-Example 1: left, example 2: right (click to enlarge)<br>
-Comparison of spectrogram (above) and Short Time FChT (below).
-Note the improved <br> time-frequency resolution for the most prominent singing voice in the latter representation.
-</small>
-<br><br>
-<br>
-<center>
-<A href="./images/f0gram_visualization_example1.png"><img alt="f0gram_example1" src="./images/f0gram_visualization_example1_preview.png" border=0></A>
-<center>
-<small>
-Example 1 - melodic content visualization (click to enlarge)<br>
-The pitch contour of the three simultaneous singing voices followed by a single voice can be <br>clearly appreciated. 
-Note that the 2nd submultiple is noticeable as it has not been attenuated.
-</small>
-<br><br>
-<br>
-<center>
-<A href="./images/f0gram_visualization_example2.png"><img alt="f0gram_example2" src="./images/f0gram_visualization_example2_preview.png" border=0></A>
-<center>
-<small>
-Example 2 - melodic content visualization (click to enlarge)<br>
-The pitch contour of the singing voice is clearly appreciated.<br> 
-Note that the 2nd and 3rd submultiples have not been attenuated.
-</small>
-</p>
+
