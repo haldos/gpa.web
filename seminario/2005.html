@@ -74,6 +74,7 @@ Released   : 20071108
 }
 </style>
 <![endif]-->
+<link rel="shortcut icon" href="http://iie.fing.edu.uy/investigacion/grupos/gpa/favicon.ico">
 </head>
 <body>
 <div id="logo">
