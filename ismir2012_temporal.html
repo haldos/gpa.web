@@ -1,0 +1,273 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+
+Name       : FronzenAge
+Description: A two-column, fixed-width template suitable for business sites and blogs.
+Version    : 1.0
+Released   : 20071108
+
+-->
+<!--s
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+<head>
+
+	<SCRIPT LANGUAGE="JavaScript">	
+		
+	
+	var theImages = new Array() // do not change this
+	
+	theImages[0] = 'images/header1.jpg'
+	theImages[1] = 'images/header2.jpg'
+	theImages[2] = 'images/header3.jpg'
+	theImages[3] = 'images/header4.jpg'
+	theImages[4] = 'images/header5.jpg'
+	theImages[5] = 'images/header6.jpg'
+	theImages[6] = 'images/header7.jpg'
+	theImages[7] = 'images/header8.jpg'
+	
+	// do not edit anything below this line
+	
+	var j = 0
+	var p = theImages.length;
+	var preBuffer = new Array()
+	for (i = 0; i < p; i++){
+	   preBuffer[i] = new Image()
+	   preBuffer[i].src = theImages[i]
+	}
+	var whichImage = Math.round(Math.random()*(p-1));
+	function showImage(){
+	document.write('<img src="'+theImages[whichImage]+'" alt="" width="960" height="147" />');
+	}
+	
+	//  End 
+	</script>
+
+	<script language="javascript">
+	function getCurrentFile() {
+		var filename = document.location.href;
+		var tail = (filename.indexOf(".", (filename.indexOf(".org")+1)) == -1) ? filename.length : filename.lastIndexOf(".");
+		return (filename.lastIndexOf("/") >= (filename.length - 1)) ? (filename.substring( filename.substring(0, filename.length - 2).lastIndexOf("/")+1, filename.lastIndexOf("/"))).toLowerCase() : (filename.substring(filename.lastIndexOf("/")+1, tail)).toLowerCase();
+	}
+	function showFlags(){
+	document.write('<td><a href="'+getCurrentFile()+'.html"><img src="./images/es_flag.png" alt="Español" width="24"/></a></td>');
+	document.write('<td><a href="'+getCurrentFile()+'_en.html"><img src="./images/en_flag.png" alt="English" width="24"/></a></td>');
+	}
+	</script>
+
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+<title>gpa:: grupo de procesamiento de audio</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+
+<link rel="shortcut icon" href="http://iie.fing.edu.uy/investigacion/grupos/gpa/favicon.ico">
+</head>
+<body>
+<div id="logo">
+
+	<table cellspacing="0" cellpadding="2" width="870" border="0" align="center"> <tbody> 
+		<tr>
+		<td align="left" valign="middle" width="354"> <a href="index.html" target="blank"><img src="images/gpa.png" alt="Grupo de Procesamiento de Audio" width="354"/></a></td>
+		<td align="right" valign="right" width="226"> <a href="http://www.universidad.edu.uy" target="blank"><img src="images/udelar_gray.png" alt="Universidad de la República" width="226"/></a></td>
+		</tr>
+	</tbody></table>
+
+</div>
+<div id="menu">
+	<ul>
+		<li class="first"><a href="index.html" accesskey="1" title="">Inicio</a></li>
+		<li><a href="integrantes.html" accesskey="2" title="">Integrantes</a></li>
+		<li><a href="investigacion.html" accesskey="3" title="">Investigación</a></li>
+		<li><a href="publicaciones.php" accesskey="4" title="">Publicaciones</a></li>
+		<li><a href="actividades.html" accesskey="5" title="">Actividades</a></li>
+		<li><a href="blog.html" accesskey="6" title="">Blog</a></li>
+	</ul>
+	<div id="search">
+
+
+
+		<div id="cse-search-form" style="width: 100%;">Loading</div>
+		<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+		<script type="text/javascript"> 
+		  google.load('search', '1', {language : 'es'});
+		  google.setOnLoadCallback(function() {
+		    var customSearchControl = new google.search.CustomSearchControl(
+		      '004219259474104110725:pdip9-miuoq');
+		
+		    customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
+		    var options = new google.search.DrawOptions();
+		    options.enableSearchboxOnly("resultados.html");
+		    customSearchControl.draw('cse-search-form', options);
+		  }, true);
+		</script>
+
+	</div>
+</div>
+<hr />
+<div id="banner"><script languaje="JavaScript">showImage();</script></div>
+-->
+<!-- start page -->
+<div id="page">
+	<!-- start content -->
+	<div id="content">
+<h1 class="title">Computer aided music performance analysis by means of pitch contours representation</h1>
+
+
+<h2 class="title">Description</h2>
+<p>
+This work deals with computer aided analysis of music performance from audio recordings. An existing computational method for the representation of pitch contours is briefly reviewed. Its application to music analysis is exemplified with two pieces of non-notated music: a field recording of a folkloric form of polyphonic singing and a commercial recording by a noted blues musician. Both examples have vocal parts exhibiting complex pitch evolution, difficult to analyse and notate with precision using Western common music notation. By using non-traditional time-frequency analysis techniques that improve the location of the components of a complex sound, the melodic content representation implemented here allows a detailed study of aspects related to pitch intonation and tuning. This in turn permits an objective measurement of essential musical characteristics that are difficult or impossible to properly evaluate by subjective perception alone, and which are often not accounted for in traditional musicological analysis. Two software tools are released that allow the practical use of the described methods.
+</p>
+
+<h2 class="title">Vamp Plugin</h2>
+<p>
+We have implemented a plugin that can be used with the audio analysis software called <a href="http://www.sonicvisualiser.org/" target="blank">Sonic Visualiser</a>. This plugin implements the calculation of the Fan Chirp transform applied to the analysis of polyphonic music. This technique, based on the decomposition of the audio signal in harmonics "chirps", results in a representation of the pitch prominence, called F0gram.
+</p>
+
+<p>
+More information and download links can be found <a href="vamp-plugin">here</a>.
+</p>
+
+<h2 class="title">Matlab GUI Tool</h2>
+
+
+
+<h2 class="title">Examples</h2>
+
+<p>
+In order to exemplify the application of the techniques described in the paper to musicological analysis, we have selected two pieces of non-notated music, both of them with vocal parts exhibiting complex pitch evolution, very difficult or downright impossible to notate with precision using Western common music notation: a field recording of a folkloric female vocal trio from the Shope region in West-Central Bulgaria, and a commercial recording by noted blues singer and guitarist Muddy Waters.
+</p>
+<br>
+
+<h3 class="title">Diaphonic chant of the Shope country (Bulgaria)</h3>
+<p>
+Audio files: <a href="./src/ismir2012/West-Bulgaria_Harvest.Song_clip.ogg">OGG</a> | <a href="./src/ismir2012/West-Bulgaria_Harvest.Song_clip.wav">WAV</a>.
+</p>
+
+<center>
+<a href="./images/bulgaria_example_full.png"><img alt="Diaphonic chant of the Shope country" src="./images/bulgaria_example_preview.png" border=0></a>
+<center>
+<small>
+Example 2: Diaphonic chant of the Shope country (click to enlarge)<br>
+One phrase of the Harvest Song, showing characteristic traits of Shopi diaphonic singing: the second part moving
+from sub-tonic to tonic, and melodic ornamentation in the first part, including tresene and a final izvikvane in unison.<br>
+</small>
+</center>
+</center>
+<br>
+
+<p>
+Temporal evolution of the alpha-f0 plane: 
+</p>
+<center>
+<object style="height: 390px; width: 640px">
+<param name="movie" value="https://www.youtube.com/v/z2yoWF9OA-4?version=3&feature=player_embedded">
+<param name="allowFullScreen" value="true">
+<param name="allowScriptAccess" value="always">
+<embed src="https://www.youtube.com/v/z2yoWF9OA-4?version=3&feature=player_embedded" type="application/x-shockwave-flash" allowfullscreen="true" allowScriptAccess="always" width="300" height="525"></object>
+</center>
+<center>
+<small>
+<a href="http://iie.fing.edu.uy/~elopez/Bulgaria_Harvest_Song.avi">Download video file (35Mb)</a><br>
+</small>
+</center>
+<br>
+
+<h3 class="title">Muddy Waters - Long Distance Call</h3>
+<p>
+Audio files: <a href="./src/ismir2012/Muddy.Waters_Long.Distance.Call_1951_clip.ogg">OGG</a> | <a href="./src/ismir2012/Muddy.Waters_Long.Distance.Call_1951_clip.wav">WAV</a>.
+</p>
+
+<center>
+<a href="./images/muddy_water_example_full.png"><img alt="Muddy Waters - Long Distance Call" src="./images/muddy_water_example_preview.png" border=0></a>
+<center>
+<small>
+Example 1: Long Distance Call by Muddy Waters (click to enlarge)<br>
+</small>
+</center>
+</center>
+<br>
+
+<p>
+Temporal evolution of the alpha-f0 plane: 
+</p>
+<center>
+<object style="height: 390px; width: 640px">
+<param name="movie" value="https://www.youtube.com/v/6WmM4Ji6vUQ?version=3&feature=player_embedded">
+<param name="allowFullScreen" value="true">
+<param name="allowScriptAccess" value="always">
+<embed src="https://www.youtube.com/v/6WmM4Ji6vUQ?version=3&feature=player_embedded" type="application/x-shockwave-flash" allowfullscreen="true" allowScriptAccess="always" width="300" height="525"></object>
+</center>
+<center>
+<small>
+<a href="http://iie.fing.edu.uy/~elopez/Muddy_Waters_-_Long_Distance_Call_-_1951.avi">Download video file (41Mb)</a><br>
+</small>
+</center>
+	</div>
+	<!-- end content -->
+	<!-- start sidebar -->
+<!--
+	<div id="sidebar">
+		<ul>
+			<li>
+				<center>
+				<table cellspacing="0" cellpadding="2" width="200" border="0" align="center"> <tbody> 
+				<tr>
+		
+				<td valign="middle" width="80"> <a href="http://www.fing.edu.uy" target="blank"><img src="images/fing.png" alt="Facultad de Ingeniería" width="80"/></a></td>
+				<td valign="middle" width="80"> <a href="http://www.eumus.edu.uy/" target="blank"><img src="images/eum.png" alt="Escuela Universitaria de Música" width="80"/></a></td>
+		
+				</tr>
+				</tbody></table>
+				</center>
+			</li>
+
+			<center>
+				Idioma / Language:<br>
+				<table cellspacing="0" cellpadding="2" width="60" height="32" border="0" align="center"> <tbody> 
+				<tr>
+				<script languaje="javascript">showFlags();</script>
+				</tr>
+				</tbody></table>
+			</center>
+
+			<li>
+				<h2>Enlaces</h2>
+				<ul>
+					<li><a href="actividades.html#seminario">Seminario de audio</a></li>
+					<li><a href="http://aeslac2011.fing.edu.uy/" target="blank">Congreso AES LAC 2011</a></li>
+					<li><a href="investigacion.html#software">Software</a></li>
+					<li><a href="http://iie.fing.edu.uy/twiki/bin/viewauth.cgi/Audio/WebHome" target="blank">Wiki</a></li>
+					
+				</ul>
+			</li>
+
+			<li>
+				<h2><a href="blog.html">Noticias</a></h2>
+
+				<h3><a href="blog.html#vamp_fcht">Vamp FChT Plugin</a></h3>
+				<h4>27 de marzo de 2012</h4><br>
+				<p>
+				Hemos implementado un plugin que puede utilizarse con el software 
+				de análisis de audio llamado Sonic Visualiser. Este plugin 
+				implementa el cálculo de la Transformada Fan Chirp... <a href="blog.html#vamp_fcht">(leer más)</a>
+				</p>
+
+			</li>
+		</ul>
+	</div>
+-->
+	<!-- end sidebar -->
+</div>
+<!-- end page -->
+<!-- 
+<div id="footer">
+	<p class="legal">Copyright (c) 2011 Audio Processing Group (FING|EUM). All rights reserved.</p>
+	<p class="credit">Designed by <a href="http://www.nodethirtythree.com/">NodeThirtyThree</a> + <a href="http://www.freecsstemplates.org/">Free CSS Templates</a></p><br>
+	<p class="credit">Free JavaScripts provided by <a href="http://javascriptsource.com">The JavaScript Source</a></p>
+-->
+</div>
+</body>
+</html>

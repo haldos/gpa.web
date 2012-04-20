@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+
+Name       : FronzenAge
+Description: A two-column, fixed-width template suitable for business sites and blogs.
+Version    : 1.0
+Released   : 20071108
+
+-->
+
+	<!-- start content -->
+	<div id="content">
+<h1 class="title">FChT Vamp Plugin</h1>
+
+<h2 class="title">Descripción</h2>
+<p>
+Hemos implementado un plugin que puede utilizarse con el software de análisis de audio llamado
+<a href="http://www.sonicvisualiser.org/" target="blank">Sonic Visualiser</a>.
+Este plugin implementa el cálculo de la <a href="fcht">Transformada Fan Chirp</a> aplicado al análisis
+de música polifónica. Esta técnica, basada en la descomposición de la señal de audio en "chirps"
+armónicos, da como resultado una representación de la prominencia en altura, llamada F0grama.
+</p>
+
+<h2 class="title">Implementación</h2>
+<p>
+La implementación se basa en el sistema de plugins de procesamiento de audio llamado
+<a href="http://www.vamp-plugins.org/" target="blank">VAMP</a>. Este sistema es 
+típicamente utilizado para plugins de análisis y extracción de características en
+señales de audio.
+</p><br>
+
+<h3 class="title">Descarga</h3>
+<p>
+El código fuente del plugin puede descargarse <a href="./src/vamp/VampFChTCore-v1.1beta_x32_x64.tar.gz">aquí</a>.
+</p>
+<p>
+También pueden descargarse versiones compiladas del plugin:
+</p>
+
+<p>
+<center>
+<table cellspacing="0" cellpadding="20" border="0" align="center"><tbody> 
+<tr height="30">
+<td valign="middle" width="150"><strong><center>Plataforma</center></strong></td>
+<td valign="middle" width="100"><strong><center>Binario 32 bits</center></strong></td>
+<td valign="middle" width="100"><strong><center>Binario 64 bits</center></strong></td>
+</tr>
+<tr height="60">
+<!-- LINUX -->
+<td valign="middle" width="150"><center><img src="images/linux_logo.png" alt="Linux" width="48" align="absmiddle"/> Linux</center></td>
+<td valign="middle" width="100"><a href="./src/vamp/FChT_f0gram.so"><center>Descargar<br>(.so)</center></a></td>
+<td valign="middle" width="100"><a href="./src/vamp/FChT_f0gram.64.so"><center>Descargar<br>(.so)</center></a></td>
+</tr>
+<tr height="60">
+<!-- WINDOWS -->
+<td valign="middle" width="150"><center><img src="images/win_logo.png" alt="Windows" width="48" align="absmiddle"/> Windows</center></td>
+<td valign="middle" width="100"><a href=#><center>Próximamente<br>(.dll)</center></a></td>
+<td valign="middle" width="100"><a href=#><center>Próximamente<br>(.dll)</center></a></td>
+</tr>
+<tr height="60">
+<!-- MAC OS -->
+<td valign="middle" width="150"><center><img src="images/mac_logo.png" alt="MacOS" width="48" align="absmiddle"/> Mac OS</center></td>
+<td valign="middle" width="100"><a href=#><center>Próximamente<br>(.dylib)</center></a></td>
+<td valign="middle" width="100"><a href=#><center>Próximamente<br>(.dylib)</center></a></td>
+</tr>
+</tbody></table>
+</center>
+</p>
+
+<h3 class="title">Instrucciones de instalación</h3>
+<ul>
+	<li><strong>Linux</strong><br>
+	Utilizar los makefiles incluidos, tanto para 32 como para 64 bits. Por ejemplo, para 32 bits, ejecutar en una terminal:<br>
+	<code>makefile -f Makefile.linux</code><br>
+	Luego copiar el archivo compilado al directorio donde se instalan los plugins vamp (en general <code>~/vamp</code>):<br>
+	<code>cp FChT_f0gram.so ~/vamp</code>
+	</li>
+	<li><strong>Windows</strong><br>
+	(próximamente)
+	</li>
+	<li><strong>MacOS</strong><br> 
+	(próximamente)
+	</li>
+</ul>
+
+<h2 class="title">Ejemplos</h2>
+<p>
+Incluimos aquí una captura de pantalla del Sonic Visualiser, utilizando nuestro plugin. El archivo de audio utilizado corresponde a un fragmento del archivo de audio <code>pop1</code> de la base de datos de MIREX. Puede descargarse <a href="./audio/example-vamp.wav">aquí</a>.
+</p>
+<p>
+<center>
+<a href="./images/plugin_example.png"><img alt="vamp_plugin_example" src="./images/plugin_example_preview.png" border=0></a><br>
+(clic para agrandar)
+</center>
+</p>
+	</div>
+	<!-- end content -->
+	<!-- start sidebar -->
+
+</body>
+</html>
